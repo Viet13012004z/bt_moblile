@@ -85,3 +85,11 @@ Lấy webview vứt vào sau đó để đường dẫn url mà b muốn trên i
 <img width="944" height="2046" alt="image" src="https://github.com/user-attachments/assets/1db07939-aa9b-45f5-9dc4-34387b601551" />
 
 # 2. Android Studio 
+
+# Tạo Project mới: 
+
+<img width="1187" height="797" alt="image" src="https://github.com/user-attachments/assets/4f065e22-73f1-41a9-b4a5-5b7290af5e09" />
+
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/16184596-f796-4802-841f-0ac0df603f0b" />
+
+<img width="1918" height="1038" alt="image" src="https://github.com/user-attachments/assets/2cde9ccd-fece-46f3-a45e-dd1960cc36d2" />
