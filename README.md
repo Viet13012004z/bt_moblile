@@ -157,16 +157,14 @@ APP SAU KHI TẢI THÀNH CÔNG VỀ CÓ TÊN BAITAPLONMOBILE
 
 GIAO DIỆN BAN ĐẦU APP 
 
-<img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/a6699be8-62a8-416d-8d77-76496dba5711" />
+<img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/ba967743-0853-48df-84df-c628da69ca61" />
 
 APP 1: 
 
-<img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/abfffb4b-2598-4649-9370-07663dbd778d" />
+<img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/de58d943-dcba-4512-829f-8cf8dcfe8be9" />
 
 APP 2: 
 
-<img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/a194fd5f-9943-4e27-8b4b-c01027060d7f" />
+<img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/30d7d7c8-aabd-4876-a17b-9f834f033a2d" />
 
-APP 3: 
 
-<img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/ba593b33-8880-497d-8907-5a4c60eea16e" />
