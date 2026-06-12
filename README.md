@@ -90,6 +90,110 @@ Lấy webview vứt vào sau đó để đường dẫn url mà b muốn trên i
 
 <img width="1187" height="797" alt="image" src="https://github.com/user-attachments/assets/4f065e22-73f1-41a9-b4a5-5b7290af5e09" />
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/16184596-f796-4802-841f-0ac0df603f0b" />
+# MỤC TIÊU CỦA APP NÀY SẼ LÀ TẠO RA 1 ỨNG DỤNG CÓ 3 BUTTON ĐỂ CHUYỂN QUA 3 APP CON 
 
-<img width="1918" height="1038" alt="image" src="https://github.com/user-attachments/assets/2cde9ccd-fece-46f3-a45e-dd1960cc36d2" />
+# THƯ MỤC CẦN THIẾT TRONG BÀI (3 ACTIVITY)
+
+<img width="345" height="822" alt="image" src="https://github.com/user-attachments/assets/bd32d24d-90ca-4089-bc48-9652cbbe29db" />
+
+# 1. GIAO DIỆN CHÍNH (activity_main.xml)
+
+Đường dẫn file: app > res > layout > activity_main.xml
+
+DÙNG CODE ĐỂ BUILD APP THEO MONG MUỐN SAU ĐÓ SẼ HIỂN THỊ GIAO DIỆN MÔ PHỎNG Ở BÊN 
+
+<img width="1452" height="897" alt="image" src="https://github.com/user-attachments/assets/ce616912-1e57-4af7-b66c-5833b51c5945" />
+
+# 2. CODE ĐIỀU HƯỚNG ( mainactivity.java) 
+
+Đường dẫn file: app > java > com.example.baitaplonmobile > MainActivity.java
+
+<img width="1572" height="947" alt="image" src="https://github.com/user-attachments/assets/351de3a9-924f-4ceb-af29-26db79116d84" />
+
+Nhiệm vụ: Ánh xạ các nút bấm bằng findViewById và sử dụng đối tượng Intent để bắt sự kiện setOnClickListener, giúp chuyển đổi màn hình khi người dùng click vào từng nút.
+
+# APP 1: (ĐỌC TÀI LIỆU OFFLINE)
+
+1. File dữ liệu và Giao diện (huongdan.txt & activity_app1.xml)
+
+Tệp dữ liệu: Nằm trong thư mục app > assets > huongdan.txt. Đây là file text chứa nội dung cẩm nang cứu hộ offline.
+
+Giao diện: app > res > layout > activity_app1.xml. File này chứa một TextView lớn (ID: tvContent) được bọc trong một ScrollView để người dùng có thể cuộn lướt dọc khi đọc bài văn dài.
+
+<img width="1918" height="933" alt="image" src="https://github.com/user-attachments/assets/80336ce6-0143-4dc2-a5b8-bc726b68ee15" />
+
+2. Code xử lý dữ liệu (App1Activity.java)
+
+Đường dẫn file: app > java > com.example.baitaplonmobile > App1Activity.java
+
+Nhiệm vụ: Sử dụng hàm getAssets().open("huongdan.txt") để mở luồng đọc dữ liệu, kết hợp với bộ đệm BufferedReader và InputStreamReader để đọc từng dòng chữ trong file, sau đó hiển thị nối chuỗi lên màn hình.
+
+<img width="1918" height="922" alt="image" src="https://github.com/user-attachments/assets/7edfe2bd-e403-476d-acb2-9a28cde7dddb" />
+
+# APP2 ( GIẢI PHƯƠNG TRÌNH BẬC 2) 
+
+1. Biểu mẫu giao diện (activity_app2_math.xml)
+
+Đường dẫn file: app > res > layout > activity_app2_math.xmlNhiệm vụ: Sử dụng 3 ô nhập liệu EditText nhận các hệ số số thực a, b, c, kết hợp giới hạn kiểu
+nhập android:inputType="numberSigned|numberDecimal" (chỉ cho phép nhập số thực và số âm). Phía dưới có 1 Button giải và 1 TextView hiển thị kết quả.
+
+<img width="1662" height="827" alt="image" src="https://github.com/user-attachments/assets/509f5ea5-eae0-4689-bea9-ec6cc20197de" />
+
+2. Thuật toán logic (App2MathActivity.java)
+
+Đường dẫn file: app > java > com.example.baitaplonmobile > App2MathActivity.java
+
+lấy dữ liệu chữ từ EditText chuyển sang kiểu Double.parseDouble(). Tiến hành biện luận: Nếu a = 0 thì giải theo phương trình bậc 1, nếu a \= 0 thì tính biệt thức Delta = b^2 - 4ac. Sử dụng Math.sqrt(delta) để tìm nghiệm căn bậc hai và in ra kết quả tương ứng.
+
+<img width="1413" height="858" alt="image" src="https://github.com/user-attachments/assets/d84bc11f-b0ad-41bd-bdf7-1e42c2532134" />
+
+# APP3 ( TRÌNH DUYỆT WEB ONLINE ) 
+
+1. Cấp quyền mạng (AndroidManifest.xml)
+Đường dẫn file: app > manifests > AndroidManifest.xml
+
+Nhiệm vụ: Khai báo thẻ cấp quyền <uses-permission android:name="android.permission.INTERNET" /> lên trên cùng để hệ điều hành Android cho phép ứng dụng chiếm dụng băng thông mạng.
+
+<img width="1548" height="956" alt="image" src="https://github.com/user-attachments/assets/57f6d137-2a91-4dab-9912-5e5d1b7bd896" />
+
+2. Giao diện và Code tích hợp (activity_app3_web.xml & App3WebActivity.java)
+
+Giao diện: Chứa một thành phần duy nhất là <WebView> chiếm toàn bộ chiều rộng và chiều cao màn hình (match_parent).
+
+Logic xử lý: Kích hoạt tính năng chạy mã JavaScript trang web bằng lệnh setJavaScriptEnabled(true). Gắn bộ điều hướng setWebViewClient(new WebViewClient()) để trang web hiển thị nội bộ bên trong app. Thực hiện nạp URL bằng câu lệnh webView.loadUrl("https://vietnamnet.vn"). Tích hợp thêm bộ lắng nghe OnBackPressedCallback để lùi trang web khi bấm phím Back.
+
+<img width="1502" height="822" alt="image" src="https://github.com/user-attachments/assets/98bec608-fef2-4182-8854-64ac37c524bd" />
+
+<img width="1232" height="845" alt="image" src="https://github.com/user-attachments/assets/001bd1ef-faa9-4242-91b3-68b33377d44f" />
+
+# SỬ DỤNG MÁY THẬT ANDROID ĐỂ TEST APP 
+
+Bước 1: Bật chế độ nhà phát triển trên đt android 
+
+Bước 2: Bật tính năng gỡ lỗi USB ( cài đặt qua USB ) 
+
+Bước 3: Kết nối điện thoại qua máy tính bằng cáp 
+
+Bước 4: Sau khi cắm sẽ xuất hiện máy thật trên android studio sau đó ấn run để cài đặt app trên điện thoại 
+
+# TEST
+
+APP SAU KHI TẢI THÀNH CÔNG VỀ CÓ TÊN BAITAPLONMOBILE
+
+<img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/b24c7e09-4af6-4d28-bdcc-ef7d7cde59c5" />
+
+GIAO DIỆN BAN ĐẦU APP 
+
+<img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/a6699be8-62a8-416d-8d77-76496dba5711" />
+
+APP 1: 
+
+<img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/abfffb4b-2598-4649-9370-07663dbd778d" />
+
+APP 2: 
+
+<img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/a194fd5f-9943-4e27-8b4b-c01027060d7f" />
+
+APP 3: 
+
+<img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/ba593b33-8880-497d-8907-5a4c60eea16e" />
